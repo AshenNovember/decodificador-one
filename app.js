@@ -84,21 +84,18 @@ function criaBotao(){
 function copiarTexto() {
     var quadro = document.getElementById("quadro");
 
-    // Seleciona o texto dentro do elemento quadro
     var range = document.createRange();
     range.selectNode(quadro);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
 
     try {
-        // Tenta copiar o texto selecionado para a área de transferência
         document.execCommand("copy");
         alert("Texto copiado para a área de transferência!");
     } catch (err) {
         console.error("Erro ao copiar texto para a área de transferência: ", err);
     }
 
-    // Limpa a seleção
     window.getSelection().removeAllRanges();
 }
 function limparBotao() {
@@ -106,6 +103,6 @@ function limparBotao() {
 
     if (button) {
         button.remove();
-        button = null; // Define a variável do botão como nula
+        button = null;  
     }
 }

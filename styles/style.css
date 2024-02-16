@@ -112,7 +112,7 @@ main{
     color: var(--cor-secundaria);
     font-size: 16px;
     padding: 5.4% 35%;
-    margin-top: auto; /* Define a margem superior como 'auto' para alinhar o botão-copiar ao final */
+    margin-top: auto;
     margin-left: 1vb;
 }
 
