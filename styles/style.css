@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-primaria: #E5E5E5;
+    --cor-secundaria: #0A3871;
+    --cor-terciaria: #D8DFE8;
+    --cor-quaternaria: #343A40;
+    --cor-quaternaria-b: #495057;
+    --cor-quinaria: #FFFFFF;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Regular', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-primaria);
+}
+
+main{
+    padding: 0 2% 0 5% ;
+    gap: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aviso {
+    padding: 2%;
+    font-size: 12px;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quaternaria-b);
+
+}
+.secao-alura {
+    height: 90vh;
+}
+.secao-azul {
+    width: 100%;
+    height: 80vh;
+    margin-top: 15vh;
+    margin-left: 10vh;
+}
+.secao-branco {
+    background-color: white;   
+    border-radius: 32px;
+    height: 90vh;
+    width: 60%;
+    padding: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    gap: 5px;
+    overflow-wrap: break-word;
+    align-self: flex-end;
+}
+
+::placeholder {
+    color: var(--cor-secundaria) !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--cor-secundaria) !important;
+
+  }
+
+.texto-azul{
+    background-color: var(--cor-primaria);
+    width: 100vb; 
+    outline: none;
+    font-family: var(--fonte-primaria);
+    font-size: 32px;
+    color: var(--cor-secundaria) !important;
+    border: none;
+    height: 62vh;
+    resize: none;
+    overflow: auto;
+}
+
+.botao-criptografar{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    padding: 3% 15%;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 24px;
+    color: var(--cor-quinaria);
+}
+
+.botao-descriptografar{
+    margin-left: 24px;
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    padding: 3% 15%;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+}
+
+.botao-copiar {
+    background-color: var(--cor-quinaria);
+    font-family: var(--fonte-primaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    padding: 5.4% 35%;
+    margin-top: auto; /* Define a margem superior como 'auto' para alinhar o botão-copiar ao final */
+    margin-left: 1vb;
+}
+
+div{
+    margin-top: 25%;
+    width: auto;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    white-space: break-word;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-quaternaria);
+    font-family: var(--fonte-primaria);
+}
+p {
+    padding: 2%;
+    font-size: 16px;
+    color: var(--cor-quaternaria-b);
+    font-family: var(--fonte-primaria);
+}
+.novo-estilo {
+    margin-top: 2%;
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    color: var(--cor-quaternaria-b) !important;
+    justify-content: left;
+    text-align: left;
+}
+
+@media (max-width: 1080px){
+    main {
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .secao-alura {
+        margin-right: 90%;
+        margin-top: 4vh;
+        height: 1%;
+    }
+    .secao-azul {
+        width: 90%;
+        height: 52vh;
+        margin-top: 0;
+        margin-left: 5vb;
+    }
+
+    .texto-azul{
+        height: 85%;
+        width: 80%; 
+    }
+    .xe {
+        display: none;
+    }
+    .secao-branco {
+        width: 85%;
+        margin-right: 4%;
+        padding: 2%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10vh;
+        flex: 1; 
+        margin-bottom: auto; 
+    }
+    div{
+        margin-top: 5%;
+    }
+
+    .botao-criptografar{
+        padding: 3% 18%;
+    }
+    
+    .botao-descriptografar{
+        margin-left: 24px;
+        padding: 3% 18%;
+    }
+
+    .botao-copiar {
+        padding: 3% 18%;
+        margin-top: auto; 
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 975px){
+    main{
+        padding: 0 5% 0 5% ;
+        margin-top: 1rem;
+    }
+    .secao-azul {
+        width: 90%;
+        height: 65vh;
+        margin-top: 0;
+        margin-left: -3vb;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .texto-azul{
+        height: 85%;
+        width: 100%; 
+    }
+    
+    .xe {
+        display: none;
+    }
+    .secao-branco {
+        width: 87%;
+        height: auto;
+        margin-right: 5%;
+        padding: 2%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 0;
+        flex: 1; 
+        margin-bottom: auto; 
+    }
+
+    .botao-criptografar{
+        padding: 3% 18%;
+    }
+    
+    .botao-descriptografar{
+        margin-left: 0;
+        padding: 3% 18%;
+    }
+
+    .botao-copiar {
+        padding: 3% 18%;
+        margin-top: auto; 
+        margin-left: 0;
+    }
+    .novo-estilo {
+        padding: 2%;
+    }
+}
